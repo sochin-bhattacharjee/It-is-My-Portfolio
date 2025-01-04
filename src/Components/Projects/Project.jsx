@@ -33,6 +33,12 @@ const Project = () => {
         "Firebase Hosting: For deploying the live website.",
       ],
       description: "",
+      shortage:[
+        "Its UI is not nice."
+      ],
+      improve:[
+        "I plan to make the UI more beautiful in the future.",
+      ]
     },
     {
       img: CineZone,
@@ -56,8 +62,13 @@ const Project = () => {
         "Custom Context for Theme Management",
         "Star Rating Component",
       ],
-      description:
-        "CineZone is a dynamic movie portal that allows users to explore, update, and manage movie details. It provides a user-friendly interface for searching movies by title or genre, updating movie details, and more.",
+      description:"CineZone is a dynamic movie portal that allows users to explore, update, and manage movie details. It provides a user-friendly interface for searching movies by title or genre, updating movie details, and more.",
+      shortage:[
+        "Its UI is not nice."
+      ],
+      improve:[
+        "I plan to make the UI more beautiful in the future.",
+      ]
     },
     {
       img: EcoAdventure,
@@ -84,8 +95,13 @@ const Project = () => {
         "React Calendar",
         "React Query",
       ],
-      description:
-        "The main goal of this project is to promote eco-tourism by offering a curated selection of eco-friendly adventures, details about activities, and an intuitive interface for users to engage with.",
+      description:"The main goal of this project is to promote eco-tourism by offering a curated selection of eco-friendly adventures, details about activities, and an intuitive interface for users to engage with.",
+      shortage:[
+        "Its UI is not nice."
+      ],
+      improve:[
+        "I plan to make the UI more beautiful in the future.",
+      ]
     },
   ];
 

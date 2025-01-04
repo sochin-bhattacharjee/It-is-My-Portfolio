@@ -1,16 +1,64 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo from "../../assets/logo.png";
 import ResumeButton from "../ResumeButton/ResumeButton";
+
 const Navbar = () => {
-    const navOptions = (
-        <>
-          <li>
-            <NavLink to="/" className={({ isActive }) => (isActive ? "border-b-2 border-[#00BFFF]" : "text-white")}>Portfolio</NavLink>
-          </li>
-        </>
-      );
+  const navOptions = (
+    <>
+      <li>
+        <HashLink
+          smooth
+          to="#home"
+        >
+          Home
+        </HashLink>
+      </li>
+      <li>
+        <HashLink
+          smooth
+          to="#about-me"
+        >
+          About Me
+        </HashLink>
+      </li>
+      <li>
+        <HashLink
+          smooth
+          to="#skills"
+        >
+          Skills
+        </HashLink>
+      </li>
+      <li>
+        <HashLink
+          smooth
+          to="#education"
+        >
+          Education
+        </HashLink>
+      </li>
+      <li>
+        <HashLink
+          smooth
+          to="#projects"
+        >
+          Projects
+        </HashLink>
+      </li>
+      <li>
+        <HashLink
+          smooth
+          to="#contact-me"
+        >
+          Contact Me
+        </HashLink>
+      </li>
+    </>
+  );
+
   return (
-    <div className="navbar md:px-10 sticky top-0 z-50">
+    <div className="navbar md:px-10 sticky top-0 z-50 bg-gray-800 text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="lg:hidden">
@@ -31,20 +79,24 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="dropdown-content bg-gray-700 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             {navOptions}
           </ul>
         </div>
-        <a className="text-sm md:text-xl flex items-center font-bold"><img className="w-8 sm:w-10" src={logo} alt="" />Sochin Bhttacharjee</a>
+        <Link
+          to="/"
+          className="text-sm md:text-xl flex items-center font-bold"
+        >
+          <img className="w-8 sm:w-10" src={logo} alt="" />
+          Sochin Bhattacharjee
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu-horizontal px-1">
-          {navOptions}
-        </ul>
+        <ul className="menu-horizontal flex gap-4 px-1">{navOptions}</ul>
       </div>
       <div className="navbar-end">
-      <ResumeButton/>
+        <ResumeButton />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import Swal from "sweetalert2";
 
 const ContactMe = () => {
   const form = useRef();
@@ -14,7 +15,11 @@ const ContactMe = () => {
       })
       .then(
         () => {
-          setFormStatus("Message sent successfully!");
+          Swal.fire({
+            title: "Send Successfully!",
+            icon: "success",
+            draggable: true
+          });
           form.current.reset();
         },
         (error) => {

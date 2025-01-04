@@ -6,16 +6,26 @@ import Project from "../../Components/Projects/Project";
 import Skills from "../../Components/Skills/Skills";
 
 const Home = () => {
-    return (
-        <div>
-            <Banner/>
-            <AboutMe/>
-            <Skills/>
-            <Education/>
-            <Project/>
-            <ContactMe/>
-        </div>
-    );
+  return (
+    <div id="home">
+      <Banner />
+      <div id="about-me">
+        <AboutMe />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="education">
+        <Education />
+      </div>
+      <div id="projects">
+        <Project />
+      </div>
+      <div id="contact-me">
+        <ContactMe />
+      </div>
+    </div>
+  );
 };
 
 export default Home;

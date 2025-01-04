@@ -84,6 +84,38 @@ const ProjectDetails = () => {
           ))}
         </ul>
       </div>
+
+      <div className="mt-5">
+        <h2 className="text-2xl font-bold text-center text-[#00BFFF] mb-6">
+        There is a shortage.
+        </h2>
+        <ul className="list-disc list-inside bg-gray-800 p-6 rounded-lg shadow-lg space-y-4">
+          {project.shortage.map((tech, index) => (
+            <li
+              key={index}
+              className="text-lg text-gray-300 leading-relaxed tracking-wide"
+            >
+              {tech}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mt-5">
+        <h2 className="text-2xl font-bold text-center text-[#00BFFF] mb-6">
+        There is a improve.
+        </h2>
+        <ul className="list-disc list-inside bg-gray-800 p-6 rounded-lg shadow-lg space-y-4">
+          {project.improve.map((tech, index) => (
+            <li
+              key={index}
+              className="text-lg text-gray-300 leading-relaxed tracking-wide"
+            >
+              {tech}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
