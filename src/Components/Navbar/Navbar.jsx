@@ -5,12 +5,12 @@ const Navbar = () => {
     const navOptions = (
         <>
           <li>
-            <NavLink to="/" className={({ isActive }) => (isActive ? "border-b-2 border-white" : "text-white")}>Portfolio</NavLink>
+            <NavLink to="/" className={({ isActive }) => (isActive ? "border-b-2 border-[#00BFFF]" : "text-white")}>Portfolio</NavLink>
           </li>
         </>
       );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 md:px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="lg:hidden">
@@ -39,7 +39,7 @@ const Navbar = () => {
         <a className="text-sm md:text-xl flex items-center font-bold"><img className="w-8 sm:w-10" src={logo} alt="" />Sochin Bhttacharjee</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu-horizontal px-1">
           {navOptions}
         </ul>
       </div>
