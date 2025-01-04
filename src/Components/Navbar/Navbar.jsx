@@ -1,7 +1,6 @@
-import { AwesomeButton } from "react-awesome-button";
-import "react-awesome-button/dist/styles.css";
-import { FaDownload } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import ResumeButton from "../ResumeButton/ResumeButton";
 const Navbar = () => {
     const navOptions = (
         <>
@@ -37,7 +36,7 @@ const Navbar = () => {
             {navOptions}
           </ul>
         </div>
-        <a className="btn btn-ghost md:text-xl">Sochin Bhttacharjee</a>
+        <a className="text-sm md:text-xl flex items-center font-bold"><img className="w-8 sm:w-10" src={logo} alt="" />Sochin Bhttacharjee</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -45,7 +44,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-      <AwesomeButton className="flex items-center gap-2 " type="primary"><FaDownload /> <span className="text-[10px] md:text-sm lg:text-base">Download Resume</span></AwesomeButton>
+      <ResumeButton/>
       </div>
     </div>
   );
