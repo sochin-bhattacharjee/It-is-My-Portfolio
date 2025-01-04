@@ -9,6 +9,7 @@ import Home from './Pages/Home/Home';
 import Layout from './Layout/Layout';
 import ProjectDetails from './Components/ProjectDetails/ProjectDetails';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
